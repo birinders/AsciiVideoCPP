@@ -37,3 +37,7 @@ The terminal is NOT automatically resized upon startup in the CPP port.
     <br>(trust me this works better in python)</sub>
 </p>
 
+- Notes-
+1. If text appears out of place, try shrinking the terminal letter size by holding ctrl + mousewheel down.
+2. Make sure to set the terminal font to a monospace font. This is the default behaviour for most terminals, and is the core requirement for the output to be aligned.
+3. Try manually adjusting the letter_height and letter_width variables if the image appears too tall or too wide.
