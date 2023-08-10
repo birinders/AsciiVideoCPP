@@ -5,7 +5,7 @@
 </h3>
 
 ## See (for) yourself on the terminal!
-Run ```git clone``` to get started, or check out the C++ implementation [here](https://github.com/birinders/AsciiVideoCPP "AsciiVideoCPP").
+Run ```git clone https://github.com/birinders/AsciiVideoCPP.git``` to get started, or check out the Python implementation [here](https://github.com/birinders/AsciiVideo "AsciiVideo").
 
 ### AsciiVideo--Py is a very simple project at heart-
 
