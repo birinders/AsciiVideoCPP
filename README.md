@@ -15,9 +15,9 @@ Take what you see, and show it on the terminal. The project uses OpenCV library 
 Eg- A pixel with high brightness value is converted to a character with a larger area, like $ or #, whereas darker characters might get converted to dots("."), commas(",") or even blank spaces (" ") if the pixel is too dim.
 
 - Note-
-The default behaviour is to choose the external camera before the built in camera. You can change this behaviour in the [Source.cpp](birinders/AsciiVideoCPP/blob/AsciiVideoCPP/blob/master/AsciiVideoCPP/Source.cpp) file.
+The default behaviour is to choose the external camera before the built in camera. You can change this behaviour in the [Source.cpp](AsciiVideoCPP/Source.cpp) file.
 
-Ratio correction is an extremely important step for this project to work correctly. Since we know that characters are not equally wide, but are taller than they are wide, like a vertical rectangle, we need to account for this differnce factor in order to produce the outputs in the correct ratio.
+Ratio correction is an extremely important step for this project to work correctly. Since we know that characters are not square, but are taller than they are wide, like a vertical rectangle, we need to account for this differnce factor in order to produce the outputs in the correct ratio.
 
 <p>The above can be calculated using the following formula- <br>
   <p align = "center">
