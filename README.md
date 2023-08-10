@@ -1,20 +1,21 @@
 # AsciiVideoCPP
 <h4>
-  This is a rough-cut version of my AsciiVideo project, ported into C++. 
-  Check the more performant and capable version written in python here.
+  This is a rough-cut version of my AsciiVideo project, ported into C++.
 </h3>
+Check the more capable and easier to setup version written in Python <a href="https://github.com/birinders/AsciiVideo">here</a>.
 
 ## See (for) yourself on the terminal!
-Run ```git clone https://github.com/birinders/AsciiVideoCPP.git``` to get started, or check out the Python implementation [here](https://github.com/birinders/AsciiVideo "AsciiVideo").
+Setup your IDE for use with OpenCV, or follow this tutorial [here](https://www.tutorialspoint.com/how-to-install-opencv-for-cplusplus-in-windows).
+<br>Run ```git clone https://github.com/birinders/AsciiVideoCPP.git``` to get started.
 
-### AsciiVideo--Py is a very simple project at heart-
+### AsciiVideo--CPP is a very simple project at heart-
 
 Take what you see, and show it on the terminal. The project uses OpenCV library in order to convert anything your webcam captures from a series of colourful dots to a series of black and white letters. The program uses the cv2 module to capture data from any camera connected to your device, and then converts it into a b&w image. This allows us to index every pixel in this image array, and convert it into suitable ascii characters according to their brightness.
 
 Eg- A pixel with high brightness value is converted to a character with a larger area, like $ or #, whereas darker characters might get converted to dots("."), commas(",") or even blank spaces (" ") if the pixel is too dim.
 
 - Note-
-The default behaviour is to choose the external camera before the built in camera. You can change this behaviour in the main.py file.
+The default behaviour is to choose the external camera before the built in camera. You can change this behaviour in the [Source.cpp](birinders/AsciiVideoCPP/blob/AsciiVideoCPP/blob/master/AsciiVideoCPP/Source.cpp) file.
 
 Ratio correction is an extremely important step for this project to work correctly. Since we know that characters are not equally wide, but are taller than they are wide, like a vertical rectangle, we need to account for this differnce factor in order to produce the outputs in the correct ratio.
 
@@ -25,13 +26,14 @@ Ratio correction is an extremely important step for this project to work correct
 </p>
 
 The script will automatically check the aspect ratio of the incoming video stream, and readjust the output to match the input aspect ratio.
-The terminal is automatically resized upon startup, such that no unnecessary black space surrounds the output.
+The terminal is NOT automatically resized upon startup in the CPP port.
 
 ### And that's it! 
 #### If everything has been set up correctly, you should now be seeing yourself on the terminal.
 <p align = "center">
   <img src="https://user-images.githubusercontent.com/102192983/257642201-fd6b3d42-ab72-4c85-96b5-8322ca522bfd.gif" alt="Hello" width = 500>
   <br>
-  <sub>Meet Birinder: The code wizard who turns coffee into Pythonic spells and errors into solutions!</sub>
+  <sub>Meet Birinder: The person trying to convice you that AsciiVideo works better in Python
+    <br>(trust me this works better in python)</sub>
 </p>
 
